@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         p{
             color: brown;
             background-color: aqua;
+        }
+
+        .my_class{
+            text-align: center;
+            color: green;
+        }
+
+        #my_id{
+            color: red;
+            text-decoration: underline;
+            font-size: 40px;
+        }
+
+        h4{
+            color: red;
         }
 
 
@@ -18,8 +34,17 @@
     <h1 style="color: blueviolet; font-size: smaller;">inline css is used to give indivisual styling to tags only</h1>
 
 
-    <p>Internal css is used to give style to entire page at once</p>
+    <h2 class="my_class">class selector are used to select element by class name</h2>
+
+
+    <p class="my_class">Internal css is used to give style to entire page at once</p>
 
     <p>name selector are used to select element by their tag name</p>
+
+    <h3 id="my_id">id selector are used to select element by id</h3>
+
+    <h4 class="myClass2" id="myID2" style="color: brown;">priority of CSS: name < class < id < inline css </h4>
+
+    <button class="btn">External CSS</button>
 </body>
 </html>
