@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login page</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+
     <style>
+        * {
+            font-family: Roboto;
+        }
         .card {
             border: 1px solid black;
             width: 20%;
@@ -13,6 +18,9 @@
             padding: 30px;
             box-sizing: border-box;
             box-shadow: 3px 3px 5px 0px rgb(13, 12, 12);
+            box-sizing: border-box;
+            background-color: white;
+            animation: float 3s linear delay iteration-count direction fill-mode;
 
         }
 
@@ -22,7 +30,61 @@
             align-items: center;
 
             height: 100vh;
+            /* background-color: dimgray; */
+            /* background-image: linear-gradient(50deg, rgb(232, 38, 38) , rgb(213, 213, 117)); */
+            background-image: linear-gradient(50deg, rgba(19, 17, 17, 0.27) , rgb(237, 237, 230)),url(https://i.pinimg.com/originals/ff/cd/42/ffcd42510346adb0102b6d10ab11eaf4.jpg);
+            background-size: cover;
+            backdrop-filter: blur(5px);
+            margin: 0;
+
         }
+
+        .Ctitle {
+            text-align: center;
+            margin: 20px 0;
+            font-family: Roboto;
+        }
+
+        .text-input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border: 1px solid black;
+
+        }
+
+        .btn {
+            background-color: crimson;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            width: 100%;
+            margin-top: 20px;
+            transition-duration: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: rgb(67, 5, 5);
+            transform: scale(1.05);
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -33,12 +95,12 @@
 
         </h2>
 
-        <form action="">
-            <label for="">Email Address</label>
-            <input type="email">
+        <form >
+            <label >Email Address</label>
+            <input class="text-input" type="email">
 
-            <label for="">Password</label>
-            <input type="password" name="" id="">
+            <label >Password</label>
+            <input class="text-input" type="password" name="" id="">
 
             <button class="btn">Submit</button>
 
