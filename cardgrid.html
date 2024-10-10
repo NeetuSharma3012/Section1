@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CardGrid</title>
+
+    <style>
+
+        .row {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 5px;
+
+        }
+
+        .card {
+            border: 2px solid red;
+            }
+
+            .card img {
+                width: 100%;
+            }
+
+            .card .card_content {
+                padding: 20px;
+            }
+
+            @media  screen and (min-width:1024px) {
+                .row{
+                    grid-template-columns: repeat(4,1fr);
+                }
+            }
+        
+
+    </style>
+</head>
+<body>
+    <div class="row">
+
+        <div class="card">
+
+            <img src="https://th.bing.com/th/id/OIP.VZGHQFXmnPtKN5dfe89ALQHaFS?w=260&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+
+            <div class="card_content">
+
+                <p>Brand Name</p>
+                <h3>shoes</h3>
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="https://th.bing.com/th/id/OIP.VZGHQFXmnPtKN5dfe89ALQHaFS?w=260&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+
+            <div class="card_content">
+
+                <p>Brand Name</p>
+                <h3>shoes</h3>
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="https://th.bing.com/th/id/OIP.VZGHQFXmnPtKN5dfe89ALQHaFS?w=260&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+
+            <div class="card_content">
+
+                <p>Brand Name</p>
+                <h3>shoes</h3>
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="https://th.bing.com/th/id/OIP.VZGHQFXmnPtKN5dfe89ALQHaFS?w=260&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+
+            <div class="card_content">
+
+                <p>Brand Name</p>
+                <h3>shoes</h3>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+</html>

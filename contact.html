@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact_Form</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+    
+
+    <style>
+        body {
+            /* background-color: aqua; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: linear-gradient(20deg, rgb(164, 91, 233),blueviolet);
+            
+        }
+    
+        .OuterBox {
+            background-color:white;
+            height:500px;
+            width: 900px;
+            display: flex;
+            
+            border-radius: 20px;
+    
+        }
+    
+        .inner_box {
+            flex: 1;
+            /* background-color: crimson; */
+            /* border: 2px solid black;
+            border-radius: 20px;  */
+            overflow: hidden;
+        }
+        
+    
+        #child1 {
+            display: row;
+            justify-content: center;
+            align-items: center;
+        
+        }
+    
+        #line1 {
+            width: 50%;
+            margin: 0 auto;;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight:bold;
+            font-size: xx-large;
+            color: blueviolet;
+            padding-top: 50px;
+        }
+
+        #line2 {
+            width: 50%;
+            margin: 0 auto;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight:500;
+            font-size:small;
+            padding-right: 27px;
+            padding-top: 5px;
+        }
+
+        .email {
+            color: blue;
+        }
+
+        .email:hover {
+            color: rgb(14, 14, 170);
+            transform: scaleY(0.5s);
+        }
+
+        
+
+        .child1 img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+    
+        .child2 {
+            display: row;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            align-content: center;
+        }
+        input {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .item {
+            padding-bottom: 5px;
+        }
+        .info1 {
+            padding-bottom: 30px;
+        }
+        .info2 {
+            padding-bottom: 30px;
+        }
+        .info3 {
+            padding-bottom: 30px;
+        }
+
+        .info {
+            padding: 50px;
+        }
+
+        .btn{
+            background-color: rgb(176, 100, 247);
+            border-radius: 2px;
+        }
+        img {
+            padding-bottom: 18px;
+            padding-left: 20px;
+        }
+        
+    </style>
+</head>
+
+
+
+
+<body>
+    <div class="OuterBox">
+
+
+        <div id="child1" class="inner_box">
+            <p id="line1">CONTACT US</p>
+            <p id="line2">or reach out manually to <span class="email">abc@gmail.com</span> </p>
+            <img src="plane.jpg" alt="icon">
+        </div>
+
+
+        <div class="child2" class="inner_box">
+
+
+            <div class="info">
+
+
+            <div class="info1">
+                <label class="item" for="">Email Address</label>
+            <input   type="email" name="" id="">
+            <p  style="color: blueviolet;">we never share your personal information
+                <br>to anyone</p>
+        </div>
+
+
+            <div class="info2">
+            <label class="item" for="Your Name">Your Name</label>
+            <input  type="text" name="" id="">
+        </div>
+
+
+            <div class="info3">
+            <label class="item" for="">Your Message</label>
+            <input  type="text" name="" id="">
+        </div>
+
+
+            <button class="btn">Send Message</button>
+        </div>
+        </div>
+
+    </div>
+</body>
+</html>
